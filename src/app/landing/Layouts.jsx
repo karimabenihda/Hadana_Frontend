@@ -7,6 +7,7 @@ import Program from './Program'
 import Footer from './Footer'
 import Cta from './Cta'
 import Faqs from './Faqs'
+import Team from './Team'
 
 function Layouts() {
   return (
@@ -15,6 +16,7 @@ function Layouts() {
     <About/>
     <Program/>
     <Levels/>
+    <Team/>
     <Blogs/>
     <Faqs/>
     <Cta/>

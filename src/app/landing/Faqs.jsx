@@ -6,43 +6,44 @@ export function Faqs () {
 
 const faqs = [
   {
-    question: "Do you offer custom furniture?",
+    question: "À partir de quel âge puis-je inscrire mon enfant à la crèche ?",
     answer:
-      "Yes, we offer custom furniture options to fit your space, style, and preferences. Contact us to discuss materials, dimensions, and finishes.",
+      "Nous accueillons les enfants dès 3 mois jusqu'à 6 ans. Nos groupes sont organisés par tranches d'âge pour adapter les activités au développement de chaque enfant.",
   },
   {
-    question: "What materials are used in your furniture?",
+    question: "Comment se déroule l'adaptation de mon enfant à la crèche ?",
     answer:
-      "Our furniture is crafted using high-quality materials such as solid wood, premium fabrics, metal, and eco-friendly finishes to ensure durability and comfort.",
+      "L'adaptation se fait progressivement sur plusieurs jours. Vous accompagnez votre enfant au début, puis nous réduisons progressivement votre présence pour favoriser son autonomie et créer un lien de confiance avec l'équipe.",
   },
   {
-    question: "Do you provide delivery and installation?",
+    question: "Quelle est la qualification de votre équipe éducative ?",
     answer:
-      "Yes, we provide fast and secure delivery. Our team can also assist with installation to ensure everything is perfectly placed in your home.",
+      "Toutes nos éducatrices sont diplômées (CAP AEPE, DEEJE ou équivalent) et formées aux premiers secours. Elles suivent régulièrement des formations continues pour rester à jour sur les meilleures pratiques éducatives.",
   },
   {
-    question: "How do I maintain and care for my furniture?",
+    question: "Comment communiquez-vous avec les parents au quotidien ?",
     answer:
-      "Each product comes with care instructions. Generally, regular dusting, avoiding direct sunlight, and using appropriate cleaning products will help maintain its beauty.",
+      "Nous utilisons une application mobile pour partager des photos, des repas et des moments de la journée. Un carnet de liaison est également disponible et des réunions parents-éducatrices sont organisées régulièrement.",
   },
 ];
 
     return (
         <>
-            
-            <div className="max-w-4xl mx-auto flex flex-col items-center justify-center  ">
-             <p className="text-sm font-medium text-[#c8ad93]">FAQ’s</p>
+            <div className="max-w-6xl mx-auto" >
 
-<h1 className="text-3xl font-semibold text-center text-[#1e3753]">
-  Have Questions About Our Furniture?
+             <p  className="text-sm  w-15 text-center  py-0.5 rounded-full text-white bg-[#5E9CEF] hover:bg-[#5e9defdf] ">FAQ’s</p>
+
+<h1 className="text-3xl font-bold my-4 text-center md:text-left">
+  Questions Fréquentes sur Notre Crèche
 </h1>
 
-<p className="text-sm text-slate-500 mt-2 pb-8 text-center">
-  Find answers about materials, customization, delivery, and care.  
+<p className="text-sm text-slate-500 mt-2 pb-8 text-left">
+  Trouvez des réponses sur l'inscription, l'adaptation, notre équipe éducative et la communication avec les parents.  
   We’re here to help you create a space that feels like home.
 </p>
+            <div className="flex flex-col items-center justify-center  ">
                 {faqs.map((faq, index) => (
-                    <div className="border-b border-slate-200 py-4 cursor-pointer w-full" key={index} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+                  <div className="border-b border-slate-200 py-4 cursor-pointer w-full" key={index} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
                         <div className="flex items-center justify-between">
                             <h3 className="text-base font-medium">
                                 {faq.question}
@@ -57,6 +58,7 @@ const faqs = [
                     </div>
                 ))}
             </div>
+                      </div>
         </>
     );
 };
