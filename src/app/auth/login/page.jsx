@@ -1,5 +1,5 @@
 import react from 'react'
-export default function Login() {
+export default function page() {
     return (
         <div>
             <h1>Login</h1>
