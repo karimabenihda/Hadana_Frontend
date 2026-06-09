@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }) {
           "--header-height": "calc(var(--spacing) * 12)",
         }}
       >
-        <AppSidebar variant="inset" />
+        {/* <AppSidebar variant="inset" /> */}
 
         <SidebarInset>
           {/* <SiteHeader /> */}
